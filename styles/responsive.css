@@ -1,0 +1,54 @@
+/* ============================
+   RESPONSIVE PARA MÓVILES
+   ============================ */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #front_panel,
+    #back_panel {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #front_panel .form,
+    #back_panel .form,
+    #front_panel .card,
+    #back_panel .card {
+        margin: 0 auto;
+    }
+
+    #arrows {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .arrow_left,
+    .arrow_right {
+        width: 40px;
+        height: 40px;
+        font-size: 26px;
+    }
+
+    #audio_player {
+        top: auto;
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
