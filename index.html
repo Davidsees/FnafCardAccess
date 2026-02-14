@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FNAF Pizzeria Access Card</title>
+    <link rel="icon" href="images/Freddyicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/Fnaf.css">
+</head>
+
+<body class="background1">
+    <header>
+        <h1>FNAF Pizzeria Access Card</h1>
+        <p>
+        The Five Nights at Freddy's pizzeria is a family restaurant filled with animatronics designed to entertain
+        visitors. Beneath its innocent appearance, the place hides a dark secret that only a few will 
+        discover upon entering it.
+        </p>
+    </header>
+
+<div id="audio_player">
+    <audio id="bg_audio" src="audio/The Living Tombstone - Five Nights at Freddys.mp3" autoplay loop></audio>
+
+    <button id="btn_toggle_audio">⏸</button>
+    <button id="btn_back10">⏪ 10s</button>
+
+    <div id="volume_box">
+        <span id="volume_icon">🔊</span>
+        <input type="range" id="volume_slider" min="0" max="1" step="0.01" value="0.1">
+    </div>
+</div>
+
+    <main>
+        <section id="front_panel">
+            <section class="form">
+                <form id="front_form">
+                    <h2>Front Side · Identity Data</h2>
+                    <div class="items_box">
+                        <div class="box">
+                            <div class="item">
+                                <label for="form_firstname">First name</label>
+                                <input type="text" value="Mike" id="form_firstname" name="firstname">
+                            </div>
+                            <div class="item">
+                                <label for="form_lastname">Last name</label>
+                                <input type="text" value="Schmidt" id="form_lastname" name="lastname">
+                            </div>
+                            <div class="item">
+                                <label for="form_resnumber">Dirección</label>
+                                <input type="text" value="Cava Baja 28" id="form_resnumber" name="resnumber">
+                            </div>
+                        </div>
+                        <input type="button" id="btn_apply_front1" class="btn_apply" value="Apply">
+                    </div>
+                    <div class="items_box">
+                        <div class="box">
+                            <div class="item">
+                                <label for="form_planet">Localidad</label>
+                                <select id="form_planet">
+                                    <option value="Valencia">Valencia</option>
+                                    <option value="Madrid" selected>Madrid</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Sevilla">Sevilla</option>
+                                    <option value="Sevilla">Asturias</option>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label for="form_access">Access</label>
+                                <select id="form_access">
+                                    <option value="307f4a">Total</option>
+                                    <option value="c9a63a">Restricted</option>
+                                    <option value="d9534f">Minimal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="button" id="btn_apply_front2" class="btn_apply" value="Apply">
+                    </div>
+                    <div class="slider_box">
+                        <label for="form_level">Night: 1</label>
+                        <input type="range" min="0" max="5" value="1" id="form_level" name="level">
+                    </div>
+                    <div class="thumbnails_box">
+                        <img src="images/zones/PirateCove.png" alt="Pirate Cove" title="Pirate Cove">
+                        <img src="images/zones/GameArea.png" alt="Game Area" title="Game Area">
+                        <img src="images/zones/PrizeCorner.jpg" alt="Prize Corner " title="Prize Corner ">
+                        <img src="images/zones/MainStage.jpg" alt="Main Stage" title="Main Stage">
+                        <img src="images/zones/KidsCove.png" alt="Kids Cove" title="Kids Cove">
+                        <img src="images/zones/FazbearsFright.png" alt="Fazbears Fright" title="Fazbears Fright">
+                    </div>
+                </form>
+            </section>
+            <section class="card">
+                <div class="first_line" id="card_fullname">Mike Schmidt</div>
+                <div class="second_line" id="card_resnumber">Calle Cava Baja 28</div>
+                <div class="third_line" id="card_planet">Localidad: Madrid</div>
+                <figure class="main_photo">
+                    <img id="card_zone_img" src="images/zones/MainStage.jpg" alt="Main Stage" title="Main Stage" />
+                    <div id="card_access">GREEN ACCESS</div>
+                </figure>
+                <div id="card_zone_name">MAIN STAGE</div>
+                <div class="bottom_box">
+                    <div id="card_level">NIGHT 1</div>
+                    <img id="card_qr" src="images/QrFnaf.png" alt="https://freddyfazbearspizzaplace.simdif.com" title="https://freddyfazbearspizzaplace.simdif.com">
+                </div>
+            </section>
+        </section>
+        <nav id="arrows">
+            <div class="arrow_left">
+                <div>‹</div>
+            </div>
+
+            <div class="arrow_right">
+                <div>›</div>
+            </div>
+        </nav>
+        <section id="back_panel">
+            <section class="card">
+                <div class="first_line" id="card_email">Mikeschmidt@gmail.com</div>
+                <div class="second_line" id="card_role">Staff</div>
+                <div class="third_line" id="card_immuno">RISK OF DEATH 20%</div>
+                <figure class="main_photo">
+                    <img id="card_species_img" src="images/Animatronics/Bonnie.png" alt="BONNIE"
+                        title="BONNIE" />
+                    <div id="card_shift">DAY SHIFT</div>
+                </figure>
+                <div id="card_species_name">BONNIE</div>
+                <div class="bottom_box">
+                    <img id="card_barcode" src="images/Fnafbarcode.png" alt="https://freddyfazbearspizzaplace.simdif.com"
+                        title="https://freddyfazbearspizzaplace.simdif.com">
+                    <div id="card_exp_date">EXP: 14/02/2026</div>
+                </div>
+            </section>
+            <section class="form">
+                <form id="back_form">
+                    <h2>Back Side · Mission Data</h2>
+                    <div class="items_box">
+                        <div class="box">
+                            <div class="item">
+                                <div class="email_row">
+                                    <input class="email_user" id="form_email_user" type="text" value="Mikeschmidt"
+                                        name="email_user">
+                                    <span class="email_at">@</span>
+                                    <input class="email_domain" id="form_email_domain" type="text" value="gmail.com"
+                                        name="email_domain">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" id="btn_apply_back1" class="btn_apply" value="Apply">
+                    </div>
+                    <div class="items_box">
+                        <div class="box">
+                            <div class="item">
+                                <label for="form_role">Work</label>
+                                <select id="form_role">
+                                    <option>Security Guard</option>
+                                    <option>Waiter/Waitress</option>
+                                    <option>Cleaner</option>
+                                    <option selected>Staff</option>
+                                    <option>Chef</option>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label for="form_shift">Shift</label>
+                                <select id="form_shift">
+                                    <option value="c9a63a" selected>Day</option>
+                                    <option value="000000">Night</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="button" id="btn_apply_back2" class="btn_apply" value="Apply">
+                    </div>
+                    <div class="slider_box">
+                        <label for="form_immuno">Risk of death: 20%</label>
+                        <input type="range" min="0" max="100" value="20" id="form_immuno" name="immuno">
+                    </div>
+                    <div class="thumbnails_box">
+                        <img src="images/Animatronics/Freddy.png" alt="Freddy" title="Freddy">
+                        <img src="images/Animatronics/Chica.png" alt="Chica" title="Chica">
+                        <img src="images/Animatronics/Bonnie.png" alt="Bonnie" title="Bonnie">
+                        <img src="images/Animatronics/ToyFreddy.png" alt="Toy Freddy" title="Toy Freddy">
+                        <img src="images/Animatronics/ToyBonnie.png" alt="Toy Bonnie" title="Toy Bonnie">
+                        <img src="images/Animatronics/ToyChica.png" alt="Toy Chica" title="Toy Chica">
+                        <img src="images/Animatronics/Mangle.png" alt="Mangle" title="Mangle">
+                        <img src="images/Animatronics/BalloonBoy.png" alt="Balloon Boy" title="Balloon Boy">
+                        <img src="images/Animatronics/Puppet.png" alt="Puppet" title="Puppet">
+                        <img src="images/Animatronics/Foxy.png" alt="Foxy" title="Foxy">
+                        <img src="images/Animatronics/SpringTrap.png" alt="Springtrap" title="Springtrap">
+
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+    <nav>
+        <input type="button" id="btn_back" class="btn_secondary" value="GO BACK">
+        <input type="button" id="btn_preview" class="btn_primary" value="PREVIEW">
+        <input type="button" id="btn_toggle_fnaf" class="btn_primary" value="Cambiar a FNAF 2">
+        <input type="button" id="btn_send" class="btn_secondary" value="SEND">
+    </nav>
+</footer>
+    <input type="hidden" id="CURRENT_SIDE" name="current_side">
+    <script src="js/Fnaf.js"></script>
+</body>
+
+</html>
