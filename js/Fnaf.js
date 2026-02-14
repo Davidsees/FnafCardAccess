@@ -275,7 +275,7 @@ const originalState = {
     email_domain: "gmail.com",
     role: "Waiter/Waitress",
     shift: "000000",
-    immuno: "55"
+    immuno: "56"
 };
 
 function toggleFnaf() {
