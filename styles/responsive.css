@@ -3,48 +3,60 @@
    ============================ */
 @media (max-width: 768px) {
 
+    /* El body centrado */
     body {
-        padding: 10px;
+        padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    /* El main en columna */
     main {
+        width: 100%;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 30px;
+        gap: 40px;
     }
 
+    /* Paneles uno debajo del otro */
     #front_panel,
     #back_panel {
-        flex-direction: column;
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center;
-        justify-content: center;
+        gap: 20px;
     }
 
-    #front_panel .form,
-    #back_panel .form,
-    #front_panel .card,
-    #back_panel .card {
+    /* Tarjetas y formularios centrados y adaptados */
+    .card,
+    .form {
+        width: 90% !important;
+        max-width: 360px;
         margin: 0 auto;
+        height: auto;
     }
 
+    /* Flechas en horizontal */
     #arrows {
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        width: 100%;
         margin: 20px 0;
+        gap: 20px;
     }
 
     .arrow_left,
     .arrow_right {
-        width: 40px;
-        height: 40px;
-        font-size: 26px;
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
     }
 
+    /* Reproductor abajo centrado */
     #audio_player {
         top: auto;
         bottom: 20px;
